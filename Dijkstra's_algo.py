@@ -38,7 +38,7 @@ def find_fastest_path(graph, start, finish):
         while previous_node :
             stack.append(previous_node)
             previous_node = parents_map.get(previous_node)
-        print(f"Found a path from {start} to {finish}! It takes {costs_map[finish]} to cover.The route is {'>'.join(reversed(stack))}")
+        print(f"Found a path from {start} to {finish}! It costs {costs_map[finish]} units to reach there.The path is {'>'.join(reversed(stack))}")
     else:
         print("Sorry no path found!")
 
